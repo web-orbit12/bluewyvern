@@ -9,25 +9,6 @@ import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 SwiperCore.use([Pagination, Autoplay]); // Use Swiper's Pagination and Autoplay components
 
 const Adaptative_Quad_Images = ({ blok }) => {
-  // Dummy data - replace this with actual data from your Storyblok component
-  const slides = [
-    {
-      imageUrl: "https://cdn.shopify.com/s/files/1/0730/2512/6696/files/Groupe_de_masques_135.jpg?v=1686668510",
-      title: "Comment m'équiper pour le MMA?",
-      videoUrl: "https://www.youtube.com/watch?v=FDmZB2d2vQg"
-    },
-    {
-      imageUrl: "https://cdn.shopify.com/s/files/1/0730/2512/6696/files/Groupe_de_masques_135.jpg?v=1686668510",
-      title: "Comment m'équiper pour le MMA?",
-      videoUrl: "https://www.youtube.com/watch?v=FDmZB2d2vQg"
-    },
-    {
-      imageUrl: "https://cdn.shopify.com/s/files/1/0730/2512/6696/files/Groupe_de_masques_135.jpg?v=1686668510",
-      title: "Comment m'équiper pour le MMA?",
-      videoUrl: "https://www.youtube.com/watch?v=FDmZB2d2vQg"
-    },
-    // Add more slides here...
-  ];
 
   return (
     <div className="page-width swiper-container" {...storyblokEditable(blok)}>

@@ -10,6 +10,12 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+main {
+  max-width: 1920px;
+  padding: 0 5rem;
+  margin: 0 auto;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -17,4 +23,165 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+
+
+/* swiper carousel - block statique */
+.swiper-container .four-blocks-container {
+  position: relative;
+  margin: 80px 0 !important;
+} 
+
+.swiper-container .four-blocks-container .titresfaq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper-container .four-blocks-container h2 { 
+  margin: 0.83em 0;
+  color: #00184C;
+  font-size: 45px;
+  font-family: forma-djr-display, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.four-blocks-container .swiper1 {
+  height: auto; 
+  overflow: hidden;
+}
+
+.four-blocks-container .swiper-slide {
+  text-align: center;
+  background: #fff;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 15px;
+}
+
+.four-blocks-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s;
+  transform-origin: top;
+}
+
+/* Style the image blocks */
+.four-blocks-container .swiper1 .image-block {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  line-height: 0;
+  display: block;
+  flex-grow: 1;
+} 
+
+/* Style the overlay */
+.four-blocks-container .swiper1 .image-block:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background-color .3s;
+}
+
+.four-blocks-container .swiper-slide .image-block:hover img {
+      transform: scale(1.1);
+}
+
+.four-blocks-container .swiper-slide .image-block:hover:after{
+  background-color: transparent;
+}
+
+
+
+/* Style the text */
+.four-blocks-container .swiper1 .image-block h3 {
+  font-size: 23px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-family: forma-djr-display, sans-serif;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.2;
+  z-index: 4;
+}
+
+.four-blocks-container .voirtous {
+  color: #00184C;
+  font-weight: normal;
+  font-family: 'forma-djr-display';
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+/* center play button */
+.four-blocks-container .swiper1 .image-block .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;    /* Adjust the width as needed */ 
+  height: 45px;   /* Adjust the height as needed */
+  background: url('https://cdn.shopify.com/s/files/1/0730/2512/6696/files/lecteur.png?v=1686668508') no-repeat;
+  background-size: contain;
+  background-position: center;
+  z-index: 10;
+  transition: all ease-in-out 300ms;
+}
+
+.four-blocks-container .swiper1 .image-block:hover .play-button {
+  background: url('https://cdn.shopify.com/s/files/1/0730/2512/6696/files/lecteur2_28479515-89d3-4433-80fd-4481cb61bbbc.png?v=1687980404') no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+
+/* pagination */
+.swiper-container .four-blocks-container .swiper-pagination {
+  position: relative !important;
+  bottom: -20px !important;
+  top: unset !important;
+} 
+
+.swiper-container .four-blocks-container .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 60px;
+  height: 4px;
+}
+
+.swiper-container .four-blocks-container .swiper-pagination-bullet-active {
+  background: #00184c;
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    padding: 0 1.5rem;
+  }
+  .swiper-container .four-blocks-container .titresfaq {
+      flex-direction: column;
+  }
+  .swiper-container .four-blocks-container .voirtous {
+      font-size: 14px;
+      margin: -20px 0 20px 0;
+  }
+ .four-blocks-container .swiper1 .image-block h3 {
+      font-size: 20px;
+      bottom: 0;
+      left: 0;
+      margin: 20px;
+ }
+.swiper-container .four-blocks-container h2 {
+      text-align: center;
+      font-size: 28px;
+}
 }

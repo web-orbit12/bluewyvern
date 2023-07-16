@@ -6,7 +6,7 @@ import Grid from "../components/Grid";
 import Page from "../components/Page";
 import Teaser from "../components/Teaser";
 import Hero_Slider from "../components/Hero_Slider";
-import Slider_Four_Block from "../components/Slider_Four_Block/Slider_Four_Block";
+import Adaptative_Quad_Images from "../components/Adaptative_Quad_Images/Adaptative_Quad_Images";
 import Head from 'next/head';
 
 // Map the names of Storyblok components to the corresponding React components
@@ -16,7 +16,7 @@ const components = {
   teaser: Teaser,
   page: Page,
   hero_slider: Hero_Slider,
-  slider_four_block: Slider_Four_Block,
+  static_four_blocks: Adaptative_Quad_Images,
 };
 
 // Initialize the Storyblok client with the access token and map of components
@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <link rel="stylesheet" href="https://use.typekit.net/utk1vqp.css" />
       </Head>
-      
+
       <Component {...pageProps} />
     </>
   );

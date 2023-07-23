@@ -36,7 +36,7 @@ const Adaptative_Quad_Images = ({ blok }) => {
 
           {blok.add_item.map((nestedBlok) => (
             <SwiperSlide key={nestedBlok._uid}>
-              <a href={nestedBlok.link} target="_blank" className="image-block" rel="noopener noreferrer">
+              <a href={nestedBlok.link.url} className="image-block" rel="noopener noreferrer">
                 <span className="play-button"></span>
                 <img src={nestedBlok.image.filename} alt={nestedBlok.title} />
                 <h3>{nestedBlok.title}</h3>

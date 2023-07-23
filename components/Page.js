@@ -4,7 +4,7 @@ const Page = ({ blok }) => {
   // Check if blok.body exists and it is an array before mapping over it
   if (blok && Array.isArray(blok.body)) {
     return (
-      <main className="text-center mt-4" {...storyblokEditable(blok)}>
+      <main className="text-center" {...storyblokEditable(blok)}>
         {blok.body.map((nestedBlok) => (
           <StoryblokComponent blok={nestedBlok} key={nestedBlok._uid} />
         ))}

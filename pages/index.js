@@ -8,7 +8,7 @@ import {
 } from "@storyblok/react";
 
 export default function Home({ story }) {
-  story = useStoryblokState(story, { customParent: 'http://localhost:3000/'});
+  story = useStoryblokState(story, { customParent: 'https://bluewyvern.vercel.app/'});
 
   return (
     <div>

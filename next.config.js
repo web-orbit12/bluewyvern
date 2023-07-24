@@ -1,4 +1,5 @@
 module.exports = {
+    assetPrefix: 'https://bluewyvern.vercel.app/',
     async headers() {
       return [
         {

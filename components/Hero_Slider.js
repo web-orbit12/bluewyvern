@@ -53,7 +53,7 @@ SwiperCore.use([Pagination, Autoplay, Navigation]); // Use Swiper's Pagination, 
       );
     } else {
       if (windowWidth < 768) {
-        return <img src={nestedBlok.mobile?.filename} alt={nestedBlok.title} ref={imgRef} />
+        return <img src={nestedBlok.image_mobile?.filename} alt={nestedBlok.title} ref={imgRef} />
       } else {
         return <img src={nestedBlok.image_desktop?.filename} alt={nestedBlok.title} ref={imgRef} />
       }

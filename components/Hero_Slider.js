@@ -53,7 +53,7 @@ SwiperCore.use([Pagination, Autoplay, Navigation]); // Use Swiper's Pagination, 
       );
     } else {
       if (windowWidth < 768) {
-        return <img src={nestedBlok.image_mobile?.filename} alt={nestedBlok.title} ref={imgRef} />
+        return <img src={nestedBlok.mobile?.filename} alt={nestedBlok.title} ref={imgRef} />
       } else {
         return <img src={nestedBlok.image_desktop?.filename} alt={nestedBlok.title} ref={imgRef} />
       }
@@ -64,17 +64,16 @@ SwiperCore.use([Pagination, Autoplay, Navigation]); // Use Swiper's Pagination, 
     <div className="swiper-container mobile-full-width" {...storyblokEditable(blok)}>
       <div className="hero-slider-container">
         <Swiper
-          className="swiper5"
+          className="swiper7"
           slidesPerView={1}
           spaceBetween={0}
           autoplay={{
             delay: 5000,
             disableOnInteraction: true,
           }}
-          pagination={{ el: ".swiper-pagination.b5", clickable: true }}
           navigation={{
-            nextEl: ".swiper5-button-next",
-            prevEl: ".swiper5-button-prev",
+            nextEl: ".swiper7-button-next",
+            prevEl: ".swiper7-button-prev",
             clickable: true,
           }}
           direction='horizontal'
@@ -101,9 +100,9 @@ SwiperCore.use([Pagination, Autoplay, Navigation]); // Use Swiper's Pagination, 
 
         </Swiper>
 
-        <div className="swiper-pagination b5"></div>
-        <div className="swiper5-button-prev swiper-button-prev"></div>
-        <div className="swiper5-button-next swiper-button-next"></div>
+        <div className="swiper-pagination b7"></div>
+        <div className="swiper7-button-prev swiper-button-prev"></div>
+        <div className="swiper7-button-next swiper-button-next"></div>
       </div>
     </div>
   );

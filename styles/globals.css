@@ -1149,6 +1149,7 @@ a {
 }
 
 .hero-slider-container .button {
+  display: block !important;
   color: #fff;
   background: transparent;
   font-family: forma-djr-display,sans-serif;

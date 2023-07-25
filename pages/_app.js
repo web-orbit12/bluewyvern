@@ -45,6 +45,7 @@ import { useEffect } from 'react';
 
 // Define the main App component. This will be used as the parent component for all pages in the app.
 function MyApp({ Component, pageProps }) {
+  // Fix slider video height
   useEffect(() => {
     if (window.parent !== window) {
       const height = document.body.scrollHeight;
